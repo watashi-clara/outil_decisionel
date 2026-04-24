@@ -1916,8 +1916,6 @@ with tabs[4]:
             climat_pluie_long = tableau_long_depuis_tableau_indexe(tableau_pluie_climat)
             ordre_mois_glissants = tableau_temperature_climat.index.tolist()
 
-            st.caption("Données sur les 12 derniers mois, jusqu'à la dernière date disponible.")
-
             afficher_grille_kpi_climat(
                 indicateurs_synthese_climat(tableau_temperature_climat, tableau_pluie_climat, ville_gauche["LIBGEO"], ville_droite["LIBGEO"]),
                 ville_gauche["LIBGEO"],
